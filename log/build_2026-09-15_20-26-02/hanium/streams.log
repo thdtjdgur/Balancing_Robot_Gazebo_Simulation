@@ -1,0 +1,77 @@
+[0.008s] Invoking command in '/home/song/ros2_ws/build/hanium': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/song/ros2_ws/build/hanium -- -j12 -l12
+[0.026s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.226s] -- Configuring done (0.2s)
+[0.228s] -- Generating done (0.0s)
+[0.229s] -- Build files have been written to: /home/song/ros2_ws/build/hanium
+[0.250s] Invoked command in '/home/song/ros2_ws/build/hanium' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/song/ros2_ws/build/hanium -- -j12 -l12
+[0.250s] Invoking command in '/home/song/ros2_ws/build/hanium': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/song/ros2_ws/build/hanium
+[0.258s] -- Install configuration: ""
+[0.258s] -- Up-to-date: /home/song/ros2_ws/install/hanium/share/hanium/urdf
+[0.258s] -- Up-to-date: /home/song/ros2_ws/install/hanium/share/hanium/urdf/balancing_robot_urdf.urdf
+[0.258s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh
+[0.259s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1.stl
+[0.259s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_rear_1.stl
+[0.259s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/battery_1.stl
+[0.259s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__body_knee_bracket_v2_1.dae
+[0.259s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__wheel_tire_1.dae
+[0.259s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/antenna_base_1.stl
+[0.259s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/antenna_base_1.dae
+[0.259s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__GM4108Motor_AS5048AEncoder_simplified_1.stl
+[0.259s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__motor_wheel_adapter_1.dae
+[0.260s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/imu_sensor_1.stl
+[0.260s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_front_1_1.dae
+[0.260s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/YDLidar_G2_1.dae
+[0.264s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/antenna_cover_1.dae
+[0.264s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__wheel_tire_1.stl
+[0.264s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_side_1.stl
+[0.264s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.dae
+[0.265s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.dae
+[0.265s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_2.stl
+[0.265s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__motor_wheel_adapter_1.stl
+[0.266s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.stl
+[0.266s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_side_1.dae
+[0.266s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/YDLidar_G2_1.stl
+[0.268s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_3.stl
+[0.268s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__body_knee_bracket_v2_1.stl
+[0.268s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/antenna_cover_1.stl
+[0.268s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_side_1_2.stl
+[0.268s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_mount_1.dae
+[0.269s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__motor_wheel_adapter_1_2.stl
+[0.269s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__motor_wheel_adapter_1_2.dae
+[0.269s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__knee_motor_bracket_1.stl
+[0.271s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1.dae
+[0.272s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/battery_1.dae
+[0.272s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_4.dae
+[0.272s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__GM4108Motor_AS5048AEncoder_simplified_1.dae
+[0.272s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_front_1_1.stl
+[0.272s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_rear_1.dae
+[0.272s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_bottom_1.dae
+[0.274s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_3.dae
+[0.274s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__knee_motor_bracket_1.dae
+[0.278s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/imu_sensor_1.dae
+[0.278s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_mount_1.stl
+[0.278s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_side_1_2.dae
+[0.278s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_2.dae
+[0.278s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/body_bottom_1.stl
+[0.279s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.stl
+[0.280s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_4.stl
+[0.280s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/launch
+[0.280s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/launch/display.launch.py
+[0.280s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/rviz
+[0.280s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/rviz/balancing_robot_urdf.rviz
+[0.280s] -- Installing: /home/song/ros2_ws/install/hanium/share/ament_index/resource_index/package_run_dependencies/hanium
+[0.280s] -- Installing: /home/song/ros2_ws/install/hanium/share/ament_index/resource_index/parent_prefix_path/hanium
+[0.280s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/environment/ament_prefix_path.sh
+[0.280s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/environment/ament_prefix_path.dsv
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/environment/path.sh
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/environment/path.dsv
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/local_setup.bash
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/local_setup.sh
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/local_setup.zsh
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/local_setup.dsv
+[0.281s] -- Up-to-date: /home/song/ros2_ws/install/hanium/share/hanium/package.dsv
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/ament_index/resource_index/packages/hanium
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/cmake/haniumConfig.cmake
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/cmake/haniumConfig-version.cmake
+[0.281s] -- Installing: /home/song/ros2_ws/install/hanium/share/hanium/package.xml
+[0.283s] Invoked command in '/home/song/ros2_ws/build/hanium' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/song/ros2_ws/build/hanium

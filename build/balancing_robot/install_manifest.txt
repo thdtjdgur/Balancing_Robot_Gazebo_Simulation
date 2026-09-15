@@ -1,0 +1,15 @@
+/home/song/ros2_ws/install/balancing_robot/share/ament_index/resource_index/package_run_dependencies/balancing_robot
+/home/song/ros2_ws/install/balancing_robot/share/ament_index/resource_index/parent_prefix_path/balancing_robot
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/environment/ament_prefix_path.sh
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/environment/ament_prefix_path.dsv
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/environment/path.sh
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/environment/path.dsv
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/local_setup.bash
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/local_setup.sh
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/local_setup.zsh
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/local_setup.dsv
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/package.dsv
+/home/song/ros2_ws/install/balancing_robot/share/ament_index/resource_index/packages/balancing_robot
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/cmake/balancing_robotConfig.cmake
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/cmake/balancing_robotConfig-version.cmake
+/home/song/ros2_ws/install/balancing_robot/share/balancing_robot/package.xml

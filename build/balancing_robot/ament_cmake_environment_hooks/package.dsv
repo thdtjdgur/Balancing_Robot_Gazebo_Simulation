@@ -1,0 +1,4 @@
+source;share/balancing_robot/local_setup.bash
+source;share/balancing_robot/local_setup.dsv
+source;share/balancing_robot/local_setup.sh
+source;share/balancing_robot/local_setup.zsh
