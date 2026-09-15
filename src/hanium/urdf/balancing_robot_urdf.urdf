@@ -948,4 +948,14 @@
     <!-- mates: COINCIDENT, COINCIDENT, PROFILECENTER, COINCIDENT, COINCIDENT, PROFILECENTER -->
     <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify; some mates unmodelled -->
   </joint>
+<gazebo reference="c_3_robot_export_clean_1__wheel_tire_1">
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+</gazebo>
+
+<gazebo reference="c_3_robot_export_clean_2__wheel_tire_1">
+  <mu1>1.0</mu1>
+  <mu2>1.0</mu2>
+</gazebo>
+
 </robot>
