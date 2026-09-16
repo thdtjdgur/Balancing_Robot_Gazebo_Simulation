@@ -949,13 +949,60 @@
     <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify; some mates unmodelled -->
   </joint>
 <gazebo reference="c_3_robot_export_clean_1__wheel_tire_1">
-  <mu1>1.0</mu1>
-  <mu2>1.0</mu2>
+  <mu1>0.8</mu1>
+  <mu2>0.8</mu2>
 </gazebo>
 
 <gazebo reference="c_3_robot_export_clean_2__wheel_tire_1">
-  <mu1>1.0</mu1>
-  <mu2>1.0</mu2>
+  <mu1>0.8</mu1>
+  <mu2>0.8</mu2>
 </gazebo>
+
+<gazebo reference="YDLidar_G2_1">
+  <sensor name='gpu_lidar' type='gpu_lidar'>
+      <pose>0 0 0 0 0 0</pose>
+      <topic>lidar</topic>
+      <update_rate>10</update_rate>
+      <lidar>
+          <scan>
+              <horizontal>
+                  <samples>360</samples>
+                  <resolution>1</resolution>
+                  <min_angle>-3.14159265</min_angle>
+                  <max_angle>3.14159265</max_angle>
+              </horizontal>
+              <vertical>
+                  <samples>1</samples>
+                  <resolution>1</resolution>
+                  <min_angle>0</min_angle>
+                  <max_angle>0</max_angle>
+              </vertical>
+          </scan>
+          <range>
+              <min>0.10</min>
+              <max>10.0</max>
+              <resolution>0.01</resolution>
+          </range>
+      </lidar>
+      <always_on>1</always_on>
+      <visualize>true</visualize>
+  </sensor>
+</gazebo>
+
+<gazebo reference="imu_sensor_1">
+  <sensor name="imu_sensor" type="imu">
+    <pose>0 0 0 0 0 0</pose>
+    <always_on>1</always_on>
+    
+    <imu>
+      <enable_orientation>true</enable_orientation>
+    </imu>
+    
+    <update_rate>200</update_rate>
+    <visualize>true</visualize>
+    <topic>imu</topic>
+  </sensor>
+</gazebo>
+
 
 </robot>
