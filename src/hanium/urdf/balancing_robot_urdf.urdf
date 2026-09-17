@@ -1001,6 +1001,27 @@
     <update_rate>200</update_rate>
     <visualize>true</visualize>
     <topic>imu</topic>
+    <always_on>1</always_on>
+  </sensor>
+</gazebo>
+
+<gazebo reference="antenna_base_1">
+  <sensor name="gps" type="navsat">
+    <gps>
+      <position_sensing>
+        <horizontal>
+          <noise type="none">
+        </horizontal>
+        
+        <vertical>
+          <noise type="none">
+        </vertical>
+      </position_sensing>
+    </gps>
+    <topic>gps</topic>
+    <update_rate>2</update_rate>
+    <visualize>true</visualize>
+    <always_on>1</always_on>
   </sensor>
 </gazebo>
 
