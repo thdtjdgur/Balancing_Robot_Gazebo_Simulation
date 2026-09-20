@@ -1,0 +1,20 @@
+[0.009s] Invoking command in '/home/song/ros2_ws/build/balancing_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/song/ros2_ws/build/balancing_robot -- -j12 -l12
+[0.043s] Invoked command in '/home/song/ros2_ws/build/balancing_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/song/ros2_ws/build/balancing_robot -- -j12 -l12
+[0.052s] Invoking command in '/home/song/ros2_ws/build/balancing_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/song/ros2_ws/build/balancing_robot
+[0.059s] -- Install configuration: ""
+[0.060s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/ament_index/resource_index/package_run_dependencies/balancing_robot
+[0.060s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/ament_index/resource_index/parent_prefix_path/balancing_robot
+[0.060s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/environment/ament_prefix_path.sh
+[0.060s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/environment/ament_prefix_path.dsv
+[0.060s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/environment/path.sh
+[0.060s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/environment/path.dsv
+[0.060s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/local_setup.bash
+[0.060s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/local_setup.sh
+[0.061s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/local_setup.zsh
+[0.061s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/local_setup.dsv
+[0.061s] -- Installing: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/package.dsv
+[0.061s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/ament_index/resource_index/packages/balancing_robot
+[0.061s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/cmake/balancing_robotConfig.cmake
+[0.061s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/cmake/balancing_robotConfig-version.cmake
+[0.061s] -- Up-to-date: /home/song/ros2_ws/install/balancing_robot/share/balancing_robot/package.xml
+[0.064s] Invoked command in '/home/song/ros2_ws/build/balancing_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/song/ros2_ws/build/balancing_robot

@@ -1,0 +1,951 @@
+<?xml version="1.0"?>
+<robot name="balancing_robot">
+  <link name="YDLidar_G2_1">
+    <!-- sw2robot density="2088.83" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/YDLidar_G2_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/YDLidar_G2_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0002365441972 0.0009824377159 0.003549837581" rpy="0 0 0" />
+      <mass value="0.38368" />
+      <inertia ixx="9.35672e-05" ixy="3.44923e-07" ixz="-3.17311e-07" iyy="9.31083e-05" iyz="9.69675e-07" izz="0.000122036" />
+    </inertial>
+  </link>
+  <link name="antenna_base_1">
+    <!-- sw2robot density="2043.35" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/antenna_base_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/antenna_base_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.344410671e-07 0.002615893132 0.0007924486363" rpy="0 0 0" />
+      <mass value="0.19584" />
+      <inertia ixx="0.000213669" ixy="1.16678e-09" ixz="1.32052e-09" iyy="0.00084381" iyz="8.62955e-06" izz="0.000960623" />
+    </inertial>
+  </link>
+  <link name="antenna_cover_1">
+    <!-- sw2robot density="3222.89" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/antenna_cover_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/antenna_cover_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.286419595e-08 0.001878362381 8.143133829e-09" rpy="0 0 0" />
+      <mass value="0.14498" />
+      <inertia ixx="8.05076e-05" ixy="-2.46793e-11" ixz="3.3677e-11" iyy="0.000347224" iyz="-2.73839e-11" izz="0.00042711" />
+    </inertial>
+  </link>
+  <link name="battery_1">
+    <!-- sw2robot density="5887.59" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/battery_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/battery_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.48184" />
+      <inertia ixx="6.17157e-05" ixy="3.99734e-20" ixz="5.15321e-21" iyy="0.000508984" iyz="-1.15809e-22" izz="0.000524443" />
+    </inertial>
+  </link>
+  <link name="body_bottom_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_bottom_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_bottom_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-4.575178291e-08 0 3.482983707e-09" rpy="0 0 0" />
+      <mass value="0.0413235" />
+      <inertia ixx="3.12137e-05" ixy="-9.97684e-23" ixz="-6.57241e-22" iyy="9.76596e-05" iyz="-3.00903e-23" izz="6.65561e-05" />
+    </inertial>
+  </link>
+  <link name="body_front_1_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_front_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_front_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0002310252244 0.001117310626 -7.777411493e-09" rpy="0 0 0" />
+      <mass value="0.078593" />
+      <inertia ixx="0.000136218" ixy="2.7386e-05" ixz="-1.28383e-15" iyy="0.000226577" iyz="-9.79967e-16" izz="0.000127824" />
+    </inertial>
+  </link>
+  <link name="body_rear_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_rear_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_rear_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0005898228676 -0.001010982892 0.0008855391407" rpy="0 0 0" />
+      <mass value="0.0532846" />
+      <inertia ixx="0.000118037" ixy="4.1474e-06" ixz="-2.70039e-07" iyy="9.26248e-05" iyz="-4.8089e-06" izz="2.85585e-05" />
+    </inertial>
+  </link>
+  <link name="base_link">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_side_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_side_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.01090581482 0.06700019874 0.03958875419" rpy="0 0 0" />
+      <mass value="0.0179746" />
+      <inertia ixx="1.04763e-05" ixy="1.17381e-10" ixz="-1.26186e-07" iyy="3.45766e-05" iyz="-3.76851e-11" izz="2.41492e-05" />
+    </inertial>
+  </link>
+  <link name="body_side_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_side_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/body_side_1_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0001295474325 -0.0001060620714 -4.245606397e-10" rpy="0 0 0" />
+      <mass value="0.0179746" />
+      <inertia ixx="1.04763e-05" ixy="1.26223e-07" ixz="8.57074e-23" iyy="2.41492e-05" iyz="2.47524e-23" izz="3.45766e-05" />
+    </inertial>
+  </link>
+  <link name="imu_sensor_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/imu_sensor_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/imu_sensor_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.0006" />
+      <inertia ixx="1.145e-08" ixy="6.65939e-26" ixz="-2.06795e-25" iyy="2.02e-08" iyz="7.69254e-26" izz="3.125e-08" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__FP04_F2_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="5.664177524e-10 -2.042428913e-06 -0.000105993184" rpy="0 0 0" />
+      <mass value="0.0072915" />
+      <inertia ixx="1.22584e-06" ixy="1.56104e-17" ixz="6.9265e-18" iyy="3.2356e-06" iyz="1.56936e-10" izz="2.87661e-06" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__FP04_F2_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="5.664177524e-10 -2.042428913e-06 -0.000105993184" rpy="0 0 0" />
+      <mass value="0.0072915" />
+      <inertia ixx="1.22584e-06" ixy="1.56104e-17" ixz="6.9265e-18" iyy="3.2356e-06" iyz="1.56936e-10" izz="2.87661e-06" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__GM4108Motor_AS5048AEncoder_simplified_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__GM4108Motor_AS5048AEncoder_simplified_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__GM4108Motor_AS5048AEncoder_simplified_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0001504143147 -0.0001507322339 0.0003030856317" rpy="0 0 0" />
+      <mass value="0.0532832" />
+      <inertia ixx="1.21077e-05" ixy="7.65248e-08" ixz="-7.06615e-08" iyy="1.21077e-05" iyz="7.06615e-08" izz="1.49432e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__RX_28_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.77850805e-09 0.001912049165 -0.0002196610883" rpy="0 0 0" />
+      <mass value="0.0432592" />
+      <inertia ixx="1.21915e-05" ixy="3.40084e-13" ixz="-4.44044e-13" iyy="7.48501e-06" iyz="1.8275e-07" izz="1.03292e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__RX_28_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.77850805e-09 0.001912049165 -0.0002196610883" rpy="0 0 0" />
+      <mass value="0.0432592" />
+      <inertia ixx="1.21915e-05" ixy="3.40084e-13" ixz="-4.44044e-13" iyy="7.48501e-06" iyz="1.8275e-07" izz="1.03292e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__body_knee_bracket_v2_1">
+    <!-- sw2robot density="2445.54" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__body_knee_bracket_v2_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__body_knee_bracket_v2_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.001560265358 5.051967178e-11 0.002071846002" rpy="0 0 0" />
+      <mass value="0.08459" />
+      <inertia ixx="8.79248e-05" ixy="1.75619e-13" ixz="-9.21755e-06" iyy="7.84735e-05" iyz="6.25136e-13" izz="3.10906e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__knee_motor_bracket_1">
+    <!-- sw2robot density="1531.91" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__knee_motor_bracket_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__knee_motor_bracket_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.00085523672 -0.0006499705279 -0.002085112383" rpy="0 0 0" />
+      <mass value="0.08639" />
+      <inertia ixx="0.000190606" ixy="8.79943e-07" ixz="-2.67433e-05" iyy="0.000175761" iyz="-1.28462e-06" izz="4.01888e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__motor_wheel_adapter_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__motor_wheel_adapter_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__motor_wheel_adapter_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.002258614461 -0.008610579339 0.01587397713" rpy="0 0 0" />
+      <mass value="0.0328664" />
+      <inertia ixx="7.54616e-06" ixy="8.91412e-08" ixz="-1.64336e-07" iyy="7.86261e-06" iyz="-6.26502e-07" izz="8.67776e-06" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__rx28_disc_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0004157424112 -0.00158494647 0.002921917681" rpy="0 0 0" />
+      <mass value="0.00140255" />
+      <inertia ixx="4.11736e-08" ixy="2.04292e-09" ixz="-3.76621e-09" iyy="4.8426e-08" iyz="-1.4358e-08" izz="6.71074e-08" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__rx28_disc_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0001861533185 0.0007096775238 -0.00130832135" rpy="0 0 0" />
+      <mass value="0.00140255" />
+      <inertia ixx="4.11736e-08" ixy="2.04292e-09" ixz="-3.76621e-09" iyy="4.8426e-08" iyz="-1.4358e-08" izz="6.71074e-08" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__rx28_mount_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_mount_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_mount_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0001085518677 0 0.0001845830013" rpy="0 0 0" />
+      <mass value="0.00741582" />
+      <inertia ixx="9.33694e-07" ixy="3.19591e-20" ixz="1.86198e-08" iyy="6.8367e-06" iyz="1.33183e-20" izz="7.70393e-06" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_1__wheel_tire_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__wheel_tire_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__wheel_tire_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.163122413e-06 0 0" rpy="0 0 0" />
+      <mass value="0.0931168" />
+      <inertia ixx="5.78488e-05" ixy="8.05813e-38" ixz="1.91653e-37" iyy="5.78488e-05" iyz="1.68387e-37" izz="0.000106758" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__FP04_F2_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="5.664177524e-10 -2.042428913e-06 -0.000105993184" rpy="0 0 0" />
+      <mass value="0.0072915" />
+      <inertia ixx="1.22584e-06" ixy="1.56104e-17" ixz="6.9265e-18" iyy="3.2356e-06" iyz="1.56936e-10" izz="2.87661e-06" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__FP04_F2_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__FP04_F2_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="5.664177524e-10 -2.042428913e-06 -0.000105993184" rpy="0 0 0" />
+      <mass value="0.0072915" />
+      <inertia ixx="1.22584e-06" ixy="1.56104e-17" ixz="6.9265e-18" iyy="3.2356e-06" iyz="1.56936e-10" izz="2.87661e-06" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__GM4108Motor_AS5048AEncoder_simplified_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__GM4108Motor_AS5048AEncoder_simplified_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__GM4108Motor_AS5048AEncoder_simplified_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0001504143147 -0.0001507322339 0.0003030856317" rpy="0 0 0" />
+      <mass value="0.0532832" />
+      <inertia ixx="1.21077e-05" ixy="7.65248e-08" ixz="-7.06615e-08" iyy="1.21077e-05" iyz="7.06615e-08" izz="1.49432e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__RX_28_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.77850805e-09 0.001912049165 -0.0002196610883" rpy="0 0 0" />
+      <mass value="0.0432592" />
+      <inertia ixx="1.21915e-05" ixy="3.40084e-13" ixz="-4.44044e-13" iyy="7.48501e-06" iyz="1.8275e-07" izz="1.03292e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__RX_28_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__RX_28_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.77850805e-09 0.001912049165 -0.0002196610883" rpy="0 0 0" />
+      <mass value="0.0432592" />
+      <inertia ixx="1.21915e-05" ixy="3.40084e-13" ixz="-4.44044e-13" iyy="7.48501e-06" iyz="1.8275e-07" izz="1.03292e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__body_knee_bracket_v2_1">
+    <!-- sw2robot density="2445.54" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__body_knee_bracket_v2_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__body_knee_bracket_v2_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.001560265358 5.051967178e-11 0.002071846002" rpy="0 0 0" />
+      <mass value="0.08459" />
+      <inertia ixx="8.79248e-05" ixy="1.75619e-13" ixz="-9.21755e-06" iyy="7.84735e-05" iyz="6.25136e-13" izz="3.10906e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__knee_motor_bracket_1">
+    <!-- sw2robot density="1531.91" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__knee_motor_bracket_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__knee_motor_bracket_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.00085523672 -0.0006499705279 -0.002085112383" rpy="0 0 0" />
+      <mass value="0.08639" />
+      <inertia ixx="0.000190606" ixy="8.79943e-07" ixz="-2.67433e-05" iyy="0.000175761" iyz="-1.28462e-06" izz="4.01888e-05" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__motor_wheel_adapter_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__motor_wheel_adapter_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__motor_wheel_adapter_1_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.002258614461 0.008610579339 -0.01587397713" rpy="0 0 0" />
+      <mass value="0.0328664" />
+      <inertia ixx="7.54616e-06" ixy="8.91412e-08" ixz="-1.64336e-07" iyy="7.86261e-06" iyz="-6.26502e-07" izz="8.67776e-06" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__rx28_disc_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_3.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0004157424112 0.00158494647 -0.002921917681" rpy="0 0 0" />
+      <mass value="0.00140255" />
+      <inertia ixx="4.11736e-08" ixy="2.04292e-09" ixz="-3.76621e-09" iyy="4.8426e-08" iyz="-1.4358e-08" izz="6.71074e-08" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__rx28_disc_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_disc_1_4.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0001861533185 -0.0007096775238 0.00130832135" rpy="0 0 0" />
+      <mass value="0.00140255" />
+      <inertia ixx="4.11736e-08" ixy="2.04292e-09" ixz="-3.76621e-09" iyy="4.8426e-08" iyz="-1.4358e-08" izz="6.71074e-08" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__rx28_mount_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_mount_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__rx28_mount_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0001085518677 0 0.0001845830013" rpy="0 0 0" />
+      <mass value="0.00741582" />
+      <inertia ixx="9.33694e-07" ixy="3.19591e-20" ixz="1.86198e-08" iyy="6.8367e-06" iyz="1.33183e-20" izz="7.70393e-06" />
+    </inertial>
+  </link>
+  <link name="c_3_robot_export_clean_2__wheel_tire_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__wheel_tire_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://hanium_enu/balancing_robot_mesh/c_3_robot_export_clean__wheel_tire_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.163122413e-06 0 0" rpy="0 0 0" />
+      <mass value="0.0931168" />
+      <inertia ixx="5.78488e-05" ixy="8.05813e-38" ixz="1.91653e-37" iyy="5.78488e-05" iyz="1.68387e-37" izz="0.000106758" />
+    </inertial>
+  </link>
+  <joint name="body_side_1__body_bottom_1" type="fixed">
+    <origin xyz="-0.003786808445 -1.841649395e-08 0.002410168255" rpy="1.570793673 -3.673205102e-06 -1.570801217" />
+    <parent link="base_link" />
+    <child link="body_bottom_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="body_side_1__c_3_robot_export_clean_1__rx28_mount_1" type="fixed">
+    <origin xyz="-0.02527927186 0.0656147903 0.04780006482" rpy="1.570792654 2.653571827e-06 -4.889759748e-06" />
+    <parent link="base_link" />
+    <child link="c_3_robot_export_clean_1__rx28_mount_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="body_side_1__antenna_base_1" type="fixed">
+    <origin xyz="0.08710038582 0.000997190547 0.01825531893" rpy="2.653571843e-06 3.673205102e-06 1.570791437" />
+    <parent link="base_link" />
+    <child link="antenna_base_1" />
+    <axis xyz="1 0 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="body_side_1__body_front_1_1" type="fixed">
+    <origin xyz="-0.0004107391661 0.0005002619865 0.06866082826" rpy="1.5708 -2.653571831e-06 3.141587764" />
+    <parent link="base_link" />
+    <child link="body_front_1_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="body_bottom_1__body_side_2" type="fixed">
+    <origin xyz="0.06699995379 0.03728487521 0.007248980096" rpy="-4.10206857e-10 -1.570796327 4.10206857e-10" />
+    <parent link="body_bottom_1" />
+    <child link="body_side_2" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__rx28_mount_1__c_3_robot_export_clean_1__RX_28_1" type="fixed">
+    <origin xyz="0.0009076981323 -2.020000014e-09 0.01417661989" rpy="3.141592653 0 1.570796327" />
+    <parent link="c_3_robot_export_clean_1__rx28_mount_1" />
+    <child link="c_3_robot_export_clean_1__RX_28_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="antenna_base_1__antenna_cover_1" type="fixed">
+    <origin xyz="0.0004974719814 0.002760511289 0.02319007695" rpy="0 0 0" />
+    <parent link="antenna_base_1" />
+    <child link="antenna_cover_1" />
+    <axis xyz="1 0 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="body_front_1_1__body_rear_1" type="fixed">
+    <origin xyz="0.06900089954 -0.03172429863 -5.491491074e-05" rpy="0 0 0" />
+    <parent link="body_front_1_1" />
+    <child link="body_rear_1" />
+    <axis xyz="1 0 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="body_side_2__c_3_robot_export_clean_2__rx28_mount_1" type="fixed">
+    <origin xyz="0.01424392462 0.00810520525 0.001385508454" rpy="0 0 3.141592653" />
+    <parent link="body_side_2" />
+    <child link="c_3_robot_export_clean_2__rx28_mount_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__RX_28_1__c_3_robot_export_clean_1__rx28_disc_1" type="revolute">
+    <origin xyz="2.016856304e-09 0.01342758212 0.01756212878" rpy="-0.4970155586 0.1244229977 -2.353796652" />
+    <parent link="c_3_robot_export_clean_1__RX_28_1" />
+    <child link="c_3_robot_export_clean_1__rx28_disc_1" />
+    <axis xyz="-0.12410221 -0.47311835 0.87221423" />
+    <limit lower="-3.14159" upper="3.14159" effort="10" velocity="3.14" />
+    <!-- mates: CONCENTRIC, DISTANCE, CONCENTRIC, DISTANCE -->
+    <!-- sw2robot-note: geo: free axis but r=2.9mm = fastener, not bearing -> fixed; config sets revolute (inference said fixed) -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__rx28_mount_1__c_3_robot_export_clean_2__RX_28_1" type="fixed">
+    <origin xyz="0.0009076981323 -2.020000014e-09 0.0141766199" rpy="-3.141592653 0 1.570796327" />
+    <parent link="c_3_robot_export_clean_2__rx28_mount_1" />
+    <child link="c_3_robot_export_clean_2__RX_28_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__rx28_disc_1__c_3_robot_export_clean_1__FP04_F2_1" type="fixed">
+    <origin xyz="-0.002063875851 -0.007883266582 0.01453547124" rpy="2.88619069 -0.4476753395 1.857031383" />
+    <parent link="c_3_robot_export_clean_1__rx28_disc_1" />
+    <child link="c_3_robot_export_clean_1__FP04_F2_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__RX_28_1__c_3_robot_export_clean_2__rx28_disc_1" type="revolute">
+    <origin xyz="2.016856304e-09 0.01342758212 0.01756212878" rpy="2.644577095 -0.1244229977 -0.7877960019" />
+    <parent link="c_3_robot_export_clean_2__RX_28_1" />
+    <child link="c_3_robot_export_clean_2__rx28_disc_1" />
+    <axis xyz="0.12410221 0.47311835 -0.87221423" />
+    <limit lower="-3.14159" upper="3.14159" effort="10" velocity="3.14" />
+    <!-- mates: CONCENTRIC, DISTANCE, CONCENTRIC, DISTANCE -->
+    <!-- sw2robot-note: geo: free axis but r=2.9mm = fastener, not bearing -> fixed; config sets revolute (inference said fixed) -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__FP04_F2_1__c_3_robot_export_clean_1__body_knee_bracket_v2_1" type="fixed">
+    <origin xyz="5.215465594e-10 0.04093305074 -0.01078092732" rpy="-1.965824423 -1.570796327 -2.746564558" />
+    <parent link="c_3_robot_export_clean_1__FP04_F2_1" />
+    <child link="c_3_robot_export_clean_1__body_knee_bracket_v2_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__rx28_disc_1__c_3_robot_export_clean_2__FP04_F2_1" type="fixed">
+    <origin xyz="0.002072176217 0.007884722934 -0.01453350025" rpy="0.2554019638 0.4476753395 -1.284561271" />
+    <parent link="c_3_robot_export_clean_2__rx28_disc_1" />
+    <child link="c_3_robot_export_clean_2__FP04_F2_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__body_knee_bracket_v2_1__c_3_robot_export_clean_1__RX_28_2" type="fixed">
+    <origin xyz="0.01600695062 -2.059480326e-09 -0.05693503985" rpy="-1.570796327 0 1.570796327" />
+    <parent link="c_3_robot_export_clean_1__body_knee_bracket_v2_1" />
+    <child link="c_3_robot_export_clean_1__RX_28_2" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__FP04_F2_1__c_3_robot_export_clean_2__body_knee_bracket_v2_1" type="fixed">
+    <origin xyz="5.362295503e-10 0.04093305075 -0.01078092732" rpy="-0.2524962906 -1.570796327 1.823292618" />
+    <parent link="c_3_robot_export_clean_2__FP04_F2_1" />
+    <child link="c_3_robot_export_clean_2__body_knee_bracket_v2_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__RX_28_2__c_3_robot_export_clean_1__rx28_disc_2" type="revolute">
+    <origin xyz="2.016856304e-09 0.01342758212 0.02241212878" rpy="-0.4970155586 0.1244229977 1.311394777" />
+    <parent link="c_3_robot_export_clean_1__RX_28_2" />
+    <child link="c_3_robot_export_clean_1__rx28_disc_2" />
+    <axis xyz="-0.12410221 -0.47311835 0.87221423" />
+    <limit lower="-3.14159" upper="3.14159" effort="10" velocity="3.14" />
+    <!-- mates: CONCENTRIC, DISTANCE, CONCENTRIC, DISTANCE -->
+    <!-- sw2robot-note: geo: free axis but r=2.9mm = fastener, not bearing -> fixed; config sets revolute (inference said fixed) -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__body_knee_bracket_v2_1__c_3_robot_export_clean_2__RX_28_2" type="fixed">
+    <origin xyz="0.01600695062 -2.059480326e-09 -0.05693503985" rpy="-1.570796327 0 1.570796327" />
+    <parent link="c_3_robot_export_clean_2__body_knee_bracket_v2_1" />
+    <child link="c_3_robot_export_clean_2__RX_28_2" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__rx28_disc_2__c_3_robot_export_clean_1__FP04_F2_2" type="fixed">
+    <origin xyz="-0.00146524833 -0.005593145478 0.01030232467" rpy="-2.670552686 -0.2062306381 0.1257749493" />
+    <parent link="c_3_robot_export_clean_1__rx28_disc_2" />
+    <child link="c_3_robot_export_clean_1__FP04_F2_2" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__RX_28_2__c_3_robot_export_clean_2__rx28_disc_2" type="revolute">
+    <origin xyz="2.016856304e-09 0.01342758212 0.02241212878" rpy="2.644577095 -0.1244229977 1.830197876" />
+    <parent link="c_3_robot_export_clean_2__RX_28_2" />
+    <child link="c_3_robot_export_clean_2__rx28_disc_2" />
+    <axis xyz="0.12410221 0.47311835 -0.87221423" />
+    <limit lower="-3.14159" upper="3.14159" effort="10" velocity="3.14" />
+    <!-- mates: CONCENTRIC, DISTANCE, CONCENTRIC, DISTANCE -->
+    <!-- sw2robot-note: geo: free axis but r=2.9mm = fastener, not bearing -> fixed; config sets revolute (inference said fixed) -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__FP04_F2_2__c_3_robot_export_clean_1__knee_motor_bracket_1" type="fixed">
+    <origin xyz="0.0001443019788 0.0750847464 -0.006518624563" rpy="-2.431648448 1.570796327 -0.8608521206" />
+    <parent link="c_3_robot_export_clean_1__FP04_F2_2" />
+    <child link="c_3_robot_export_clean_1__knee_motor_bracket_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__rx28_disc_2__c_3_robot_export_clean_2__FP04_F2_2" type="fixed">
+    <origin xyz="0.001467013664 0.005585595213 -0.01030616901" rpy="-0.4710399673 0.2062306381 -3.015817704" />
+    <parent link="c_3_robot_export_clean_2__rx28_disc_2" />
+    <child link="c_3_robot_export_clean_2__FP04_F2_2" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__knee_motor_bracket_1__c_3_robot_export_clean_1__GM4108Motor_AS5048AEncoder_simplified_1" type="fixed">
+    <origin xyz="-0.003021704947 0.0001440766621 0.0388409967" rpy="-1.570796327 -0.7853981634 -1.570796327" />
+    <parent link="c_3_robot_export_clean_1__knee_motor_bracket_1" />
+    <child link="c_3_robot_export_clean_1__GM4108Motor_AS5048AEncoder_simplified_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__FP04_F2_2__c_3_robot_export_clean_2__knee_motor_bracket_1" type="fixed">
+    <origin xyz="0.0001443020126 0.07508474641 -0.006518624551" rpy="-1.570796327 1.570796327 4.10206857e-10" />
+    <parent link="c_3_robot_export_clean_2__FP04_F2_2" />
+    <child link="c_3_robot_export_clean_2__knee_motor_bracket_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__knee_motor_bracket_1__c_3_robot_export_clean_2__GM4108Motor_AS5048AEncoder_simplified_1" type="fixed">
+    <origin xyz="-0.003021704947 0.0001440766621 0.0388409967" rpy="-1.570796327 -0.7853981634 -1.570796327" />
+    <parent link="c_3_robot_export_clean_2__knee_motor_bracket_1" />
+    <child link="c_3_robot_export_clean_2__GM4108Motor_AS5048AEncoder_simplified_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="body_front_1_1__YDLidar_G2_1" type="fixed">
+    <origin xyz="0.02351052224 0.02997636286 -0.0001544538574" rpy="1.570796327 1.565431716 -3.141592653" />
+    <parent link="body_front_1_1" />
+    <child link="YDLidar_G2_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, PROFILECENTER, PROFILECENTER, CONCENTRIC, COINCIDENT, PROFILECENTER, PROFILECENTER -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); some mates unmodelled; config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__GM4108Motor_AS5048AEncoder_simplified_1__c_3_robot_export_clean_1__motor_wheel_adapter_1" type="continuous">
+    <origin xyz="4.92887774e-05 -4.960665058e-05 0.01648918587" rpy="-0.4970155586 0.1244229977 0.5783564916" />
+    <parent link="c_3_robot_export_clean_1__GM4108Motor_AS5048AEncoder_simplified_1" />
+    <child link="c_3_robot_export_clean_1__motor_wheel_adapter_1" />
+    <axis xyz="0.12410221 0.47311835 -0.87221423" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets continuous (inference said revolute) -->
+  </joint>
+  <joint name="c_3_robot_export_clean_1__motor_wheel_adapter_1__c_3_robot_export_clean_1__wheel_tire_1" type="fixed">
+    <origin xyz="-0.002607224934 -0.00993505695 0.01831657782" rpy="-0.5069509291 -0.06790336408 2.763492857" />
+    <parent link="c_3_robot_export_clean_1__motor_wheel_adapter_1" />
+    <child link="c_3_robot_export_clean_1__wheel_tire_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__GM4108Motor_AS5048AEncoder_simplified_1__c_3_robot_export_clean_2__motor_wheel_adapter_1" type="continuous">
+    <origin xyz="4.928872762e-05 -4.960666529e-05 0.01648918591" rpy="2.644577095 -0.1244229977 -2.149152818" />
+    <parent link="c_3_robot_export_clean_2__GM4108Motor_AS5048AEncoder_simplified_1" />
+    <child link="c_3_robot_export_clean_2__motor_wheel_adapter_1" />
+    <axis xyz="-0.12410221 -0.47311835 0.87221423" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets continuous (inference said revolute) -->
+  </joint>
+  <joint name="c_3_robot_export_clean_2__motor_wheel_adapter_1__c_3_robot_export_clean_2__wheel_tire_1" type="fixed">
+    <origin xyz="0.002604997411 0.009935458027 -0.0183166772" rpy="2.652260264 0.1539029605 -3.117834953" />
+    <parent link="c_3_robot_export_clean_2__motor_wheel_adapter_1" />
+    <child link="c_3_robot_export_clean_2__wheel_tire_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="body_bottom_1__battery_1" type="fixed">
+    <origin xyz="3.840236822e-05 0.01400000003 -0.01372265454" rpy="-1.570796327 -0.002239842132 -3.141592653" />
+    <parent link="body_bottom_1" />
+    <child link="battery_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: COINCIDENT, PROFILECENTER, COINCIDENT, PROFILECENTER -->
+    <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify; some mates unmodelled -->
+  </joint>
+  <joint name="battery_1__imu_sensor_1" type="fixed">
+    <origin xyz="-0.0008887745404 0.001194253074 -0.013" rpy="0 0 -0.01355267209" />
+    <parent link="battery_1" />
+    <child link="imu_sensor_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: COINCIDENT, COINCIDENT, PROFILECENTER, COINCIDENT, COINCIDENT, PROFILECENTER -->
+    <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify; some mates unmodelled -->
+  </joint>
+</robot>

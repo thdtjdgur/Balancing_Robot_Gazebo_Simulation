@@ -1,0 +1,8 @@
+-- Install configuration: ""
+-- Up-to-date: /home/song/ros2_ws/install/hanium_enu/share/hanium_enu/urdf
+-- Up-to-date: /home/song/ros2_ws/install/hanium_enu/share/hanium_enu/urdf/balancing_robot_urdf.urdf
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find "/home/song/ros2_ws/src/hanium_enu/meshes": No
+  such file or directory.
+
+[0m

@@ -1,0 +1,31 @@
+[0.020s] Invoking command in '/home/song/ros2_ws/build/hanium_enu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/song/ros2_ws/src/hanium_enu -DCMAKE_INSTALL_PREFIX=/home/song/ros2_ws/install/hanium_enu
+[0.178s] -- The C compiler identification is GNU 13.3.0
+[0.312s] -- The CXX compiler identification is GNU 13.3.0
+[0.344s] -- Detecting C compiler ABI info
+[0.499s] -- Detecting C compiler ABI info - done
+[0.511s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.512s] -- Detecting C compile features
+[0.513s] -- Detecting C compile features - done
+[0.530s] -- Detecting CXX compiler ABI info
+[0.697s] -- Detecting CXX compiler ABI info - done
+[0.709s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.710s] -- Detecting CXX compile features
+[0.710s] -- Detecting CXX compile features - done
+[0.723s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.959s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.312s] -- Configuring done (1.3s)
+[1.317s] -- Generating done (0.0s)
+[1.320s] -- Build files have been written to: /home/song/ros2_ws/build/hanium_enu
+[1.332s] Invoked command in '/home/song/ros2_ws/build/hanium_enu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/song/ros2_ws/src/hanium_enu -DCMAKE_INSTALL_PREFIX=/home/song/ros2_ws/install/hanium_enu
+[1.333s] Invoking command in '/home/song/ros2_ws/build/hanium_enu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/song/ros2_ws/build/hanium_enu -- -j12 -l12
+[1.395s] Invoked command in '/home/song/ros2_ws/build/hanium_enu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/song/ros2_ws/build/hanium_enu -- -j12 -l12
+[1.396s] Invoking command in '/home/song/ros2_ws/build/hanium_enu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/song/ros2_ws/build/hanium_enu
+[1.407s] -- Install configuration: ""
+[1.407s] -- Installing: /home/song/ros2_ws/install/hanium_enu/share/hanium_enu/urdf
+[1.407s] [31mCMake Error at cmake_install.cmake:46 (file):
+[1.408s]   file INSTALL cannot find "/home/song/ros2_ws/src/hanium_enu/meshes": No
+[1.408s]   such file or directory.
+[1.408s] 
+[1.408s] [0m
+[1.408s] -- Installing: /home/song/ros2_ws/install/hanium_enu/share/hanium_enu/urdf/balancing_robot_urdf.urdf
+[1.409s] Invoked command in '/home/song/ros2_ws/build/hanium_enu' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/song/ros2_ws/build/hanium_enu
