@@ -155,9 +155,9 @@
       </geometry>
     </collision>
     <inertial>
-      <origin xyz="-0.01090581482 0.06700019874 0.03958875419" rpy="0 0 0" />
+      <origin xyz="-0.06700004006 -0.01090606772 0.03958869254" rpy="0 0 0" />
       <mass value="0.0179746" />
-      <inertia ixx="1.04763e-05" ixy="1.17381e-10" ixz="-1.26186e-07" iyy="3.45766e-05" iyz="-3.76851e-11" izz="2.41492e-05" />
+      <inertia ixx="3.45766e-05" ixy="-8.85255e-11" ixz="-4.63967e-13" iyy="1.04763e-05" iyz="-1.26273e-07" izz="2.41492e-05" />
     </inertial>
   </link>
   <link name="body_side_2">
@@ -681,7 +681,7 @@
     </inertial>
   </link>
   <joint name="body_side_1__body_bottom_1" type="fixed">
-    <origin xyz="-0.003786808445 -1.841649395e-08 0.002410168255" rpy="1.570793673 -3.673205102e-06 -1.570801217" />
+    <origin xyz="3.184780997e-08 -0.003786744602 0.002409905552" rpy="1.5708 1.349343953e-11 -3.673205103e-06" />
     <parent link="base_link" />
     <child link="body_bottom_1" />
     <axis xyz="0 1 0" />
@@ -689,7 +689,7 @@
     <!-- sw2robot-note: geo: fully constrained -->
   </joint>
   <joint name="body_side_1__c_3_robot_export_clean_1__rx28_mount_1" type="fixed">
-    <origin xyz="-0.02527927186 0.0656147903 0.04780006482" rpy="1.570792654 2.653571827e-06 -4.889759748e-06" />
+    <origin xyz="-0.06561458391 -0.025279575 0.04779990715" rpy="1.570796327 -3.673205108e-06 1.570792654" />
     <parent link="base_link" />
     <child link="c_3_robot_export_clean_1__rx28_mount_1" />
     <axis xyz="0 0 -1" />
@@ -697,7 +697,7 @@
     <!-- sw2robot-note: geo: fully constrained -->
   </joint>
   <joint name="body_side_1__antenna_base_1" type="fixed">
-    <origin xyz="0.08710038582 0.000997190547 0.01825531893" rpy="2.653571843e-06 3.673205102e-06 1.570791437" />
+    <origin xyz="-0.0009972294339 0.08710034819 0.0182556349" rpy="-3.673205093e-06 -1.349332362e-11 3.14158898" />
     <parent link="base_link" />
     <child link="antenna_base_1" />
     <axis xyz="1 0 0" />
@@ -705,7 +705,7 @@
     <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
   </joint>
   <joint name="body_side_1__body_front_1_1" type="fixed">
-    <origin xyz="-0.0004107391661 0.0005002619865 0.06866082826" rpy="1.5708 -2.653571831e-06 3.141587764" />
+    <origin xyz="-0.0005000092873 -0.0004110950825 0.06866058873" rpy="1.570796327 3.673205105e-06 -1.5708" />
     <parent link="base_link" />
     <child link="body_front_1_1" />
     <axis xyz="0 0 1" />
@@ -948,4 +948,85 @@
     <!-- mates: COINCIDENT, COINCIDENT, PROFILECENTER, COINCIDENT, COINCIDENT, PROFILECENTER -->
     <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify; some mates unmodelled -->
   </joint>
+<gazebo reference="c_3_robot_export_clean_1__wheel_tire_1">
+  <mu1>0.8</mu1>
+  <mu2>0.8</mu2>
+</gazebo>
+
+<gazebo reference="c_3_robot_export_clean_2__wheel_tire_1">
+  <mu1>0.8</mu1>
+  <mu2>0.8</mu2>
+</gazebo>
+
+<gazebo reference="YDLidar_G2_1">
+  <sensor name='gpu_lidar' type='gpu_lidar'>
+      <pose>0 0 0 0 0 0</pose>
+      <topic>lidar</topic>
+      <update_rate>10</update_rate>
+      <lidar>
+          <scan>
+              <horizontal>
+                  <samples>360</samples>
+                  <resolution>1</resolution>
+                  <min_angle>-3.14159265</min_angle>
+                  <max_angle>3.14159265</max_angle>
+              </horizontal>
+              <vertical>
+                  <samples>1</samples>
+                  <resolution>1</resolution>
+                  <min_angle>0</min_angle>
+                  <max_angle>0</max_angle>
+              </vertical>
+          </scan>
+          <range>
+              <min>0.10</min>
+              <max>10.0</max>
+              <resolution>0.01</resolution>
+          </range>
+      </lidar>
+      <always_on>1</always_on>
+      <visualize>true</visualize>
+  </sensor>
+</gazebo>
+
+<gazebo reference="imu_sensor_1">
+  <sensor name="imu_sensor" type="imu">
+    <pose>0 0 0 0 0 0</pose>
+    <always_on>1</always_on>
+   
+    <imu>
+      <enable_orientation>true</enable_orientation>
+    </imu>
+   
+    <update_rate>200</update_rate>
+    <visualize>true</visualize>
+    <topic>imu</topic>
+    <always_on>1</always_on>
+  </sensor>
+</gazebo>
+
+<gazebo reference="antenna_base_1">
+  <sensor name="gps" type="navsat">
+    <gps>
+      <position_sensing>
+        <horizontal>
+          <noise type="none">
+          </noise>
+        </horizontal>
+       
+        <vertical>
+          <noise type="none">
+          </noise>
+        </vertical>
+      </position_sensing>
+    </gps>
+    <topic>gps</topic>
+    <update_rate>2</update_rate>
+    <visualize>true</visualize>
+    <always_on>1</always_on>
+  </sensor>
+</gazebo>
+
 </robot>
+
+
